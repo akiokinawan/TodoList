@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tab</title>
+</head>
+<body>
+  <div class="container">
+    <ul class="menu">
+      <li><a href="#" class="active" data-id="about">支出</a></li>
+      <li><a href="#" data-id="service">収入</a></li>
+    </ul>
+    
+    <section class="content active" id="about">
+      <form action="" method="POST">
+        <input type="hidden" name="amount" value="1">
+        <label>日付</label>
+        <input type="date"><br>
+        <label>カテゴリ</label>
+        <select>
+          <option value="1">食費</option>
+          <option value="2">交通費</option>
+          <option value="3">交際費</option>
+          <option value="4">家賃</option>
+        </select><br>
+        <label>タイトル</label>
+        <input type="text"><br>
+        <label>金額</label>
+        <input type="text"><br>
+        <label>メモ</label><br>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+      </form>
+    </section>
+
+    <section class="content" id="service">
+      <form action="" method="POST">
+        <input type="hidden" name="income" value="2">
+        <label>日付</label>
+        <input type="date"><br>
+        <label>カテゴリ</label>
+        <select>
+          <option value="1">収入</option>
+          <option value="2">その他</option>
+        </select><br>
+        <label>タイトル</label>
+        <input type="text"><br>
+        <label>金額</label>
+        <input type="text"><br>
+        <label>メモ</label><br>
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+      </form>
+    </section>
+
+</div>
+  
+
+  <script src="./js/main.js"></script>
+</body>
+</html>
